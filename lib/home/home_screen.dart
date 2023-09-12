@@ -148,11 +148,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Stack(
                     children: [
                       Container(
-                        width: 500,
+                        width: 350,
                         height: 380,
                         child: Image.asset(
-                          Images.farm_img,
-                          width: 500,
+                          Images.property,
+                          width: 350,
                           height: 380,
                           fit: BoxFit.cover,
                         ),

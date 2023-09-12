@@ -10,6 +10,7 @@ import '../utils/Images.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_strings.dart';
 import '../utils/app_styles.dart';
+import 'cnfrm_number.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -37,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             const SizedBox(height: 20),
             Text(
-              Strings.login,
+              Strings.login_or,
               style: AppStyles.semiBoldTextStyle,
             ),
             const SizedBox(height: 20),
@@ -72,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: CustomButton(
                       text: Strings.continue_text,
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen() ));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => ConfirmYourNumberPage() ));
                       },
                       textStyle: AppStyles.whiteSmallTextStyle,
                       backgroundColor: AppColors.dark_blue,

@@ -1,5 +1,7 @@
 class Strings {
-  static const login = "Log in or sign up to Airbnb";
+  static const login = "Log In";
+  static const sign_up = "Sign Up";
+  static const login_or = "Log in or sign up to Airbnb";
   static const mobile = "Mobile";
   static const enter_number = "Enter your phone number";
   static const cnfrm_number = "We'll call or text you to confirm your number. Standard \nmessage and data rates apply.";
@@ -13,4 +15,23 @@ class Strings {
   static const anywhere = "Anywhere - Any week - Add guests";
   static const total_taxes = "Display total price before \ntaxes";
   static const map = "Map";
+  static const confirm_your_number = "Confirm Your Number";
+  static const enter_the_code = "Enter the code we’ve sent by SMS to \n06387040963:";
+  static const havenot = "Haven’t received code?";
+  static const send_again = "Send again";
+  static const more_options = "More Options";
+  static const choose_anotherway = "Choose another way to get a verification \ncode at 9087654321";
+  static const text_msg = "Text Messages";
+  static const whatsapp = "Whatsapp";
+  static const phone_call = "Phone Call";
+  static const your_profile = "Your Profile";
+  static const login_to_start = "Log in to start planning your next trip.";
+  static const donot_have_an_account = "Don't have an account?";
+  static const setting = "Settings";
+  static const accessibility = "Accessibility";
+  static const learn_hosting = "Learn about hosting";
+  static const get_help = "Get_help";
+  static const terms_services = "Terms of Service";
+  static const privacy_policy = "Privacy Policy";
+  static const open_source = "Open Source Licenses";
 }
