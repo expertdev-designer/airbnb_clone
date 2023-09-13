@@ -24,7 +24,7 @@ class Strings {
   static const text_msg = "Text Messages";
   static const whatsapp = "Whatsapp";
   static const phone_call = "Phone Call";
-  static const your_profile = "Your Profile";
+  static const your_profile = "Your profile";
   static const login_to_start = "Log in to start planning your next trip.";
   static const donot_have_an_account = "Don't have an account?";
   static const setting = "Settings";
