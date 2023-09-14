@@ -158,19 +158,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       Positioned(
-                        bottom: 20,
-                        left: 15,
-                        right: 15,
-                        child: Container(
-                          width: 323,
-                          height: 100,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                        ),
-                      ),
-                      Positioned(
                         top: 20,
                         right: 20,
                         child: Icon(

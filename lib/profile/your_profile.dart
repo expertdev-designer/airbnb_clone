@@ -1,55 +1,15 @@
+import 'package:airbnb/common_widgets/custom_list_tile.dart';
 import 'package:airbnb/home/home_screen.dart';
 import 'package:airbnb/login/login_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
 import '../common_widgets/custom_button.dart';
-import '../login/cnfrm_number.dart';
 import '../utils/Images.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_strings.dart';
 import '../utils/app_styles.dart';
 
 class YourProfilePage extends StatelessWidget {
-  YourProfilePage({super.key});
-
-  final List<Map<String, String>> profileTiles = [
-    {
-      'leftImageAsset': Images.setting,
-      'text': Strings.setting,
-      'rightImageAsset': Images.right_arrow,
-    },
-    {
-      'leftImageAsset': Images.accessibility,
-      'text': Strings.accessibility,
-      'rightImageAsset': Images.right_arrow,
-    },
-    {
-      'leftImageAsset': Images.learn_hosting,
-      'text': Strings.learn_hosting,
-      'rightImageAsset': Images.right_arrow,
-    },
-    {
-      'leftImageAsset': Images.question_mark,
-      'text': Strings.get_help,
-      'rightImageAsset': Images.right_arrow,
-    },
-    {
-      'leftImageAsset': Images.notes,
-      'text': Strings.terms_services,
-      'rightImageAsset': Images.right_arrow,
-    },
-    {
-      'leftImageAsset': Images.privacy_policy,
-      'text': Strings.privacy_policy,
-      'rightImageAsset': Images.right_arrow,
-    },
-    {
-      'leftImageAsset': Images.open_source,
-      'text': Strings.open_source,
-      'rightImageAsset': Images.right_arrow,
-    },
-  ];
+  const YourProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,13 +18,13 @@ class YourProfilePage extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 30),
+            padding: const EdgeInsets.only(top: 20),
             child: Text(
               Strings.your_profile,
               style: AppStyles.semiBoldEightyStyle
             ),
           ),
-          const SizedBox(height: 5),
+          const SizedBox(height: 3),
           Text(
             Strings.login_to_start,
             style: AppStyles.normalBlueStyle,
@@ -80,11 +40,11 @@ class YourProfilePage extends StatelessWidget {
               },
               textStyle: AppStyles.sixteenTextStyle,
               backgroundColor: AppColors.pink,
-              borderRadius: 30,
+              borderRadius: 10,
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 10),
+            padding: const EdgeInsets.only(top: 8),
             child: Row(
               children: [
                 Text(
@@ -103,31 +63,40 @@ class YourProfilePage extends StatelessWidget {
               ],
             ),
           ),
-          ListView.builder(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            itemCount: profileTiles.length,
-            itemBuilder: (context, index) {
-              final tile = profileTiles[index];
-              return Column(
-                children: [
-                  ListTile(
-                    leading: SvgPicture.asset(
-                      tile['leftImageAsset']!,
-                      width: 30,
-                      height: 30,
-                    ),
-                    title: Text(tile['text']!),
-                    trailing: SvgPicture.asset(
-                      tile['rightImageAsset']!,
-                      width: 30,
-                      height: 30,
-                    ),
-                  ),
-                  const Divider(), // Add a divider after each ListTile
-                ],
-              );
-            },
+          const CustomListTile(leftImageAsset: Images.setting,
+            text: Strings.setting,
+            rightImageAsset: Images.right_arrow,),
+          const CustomListTile(leftImageAsset: Images.accessibility,
+            text: Strings.accessibility,
+            rightImageAsset: Images.right_arrow,),
+          const CustomListTile(leftImageAsset: Images.learn_hosting,
+            text: Strings.learn_hosting,
+            rightImageAsset: Images.right_arrow,),
+          const CustomListTile(leftImageAsset: Images.question_mark,
+            text: Strings.get_help,
+            rightImageAsset: Images.right_arrow,),
+          const CustomListTile(leftImageAsset: Images.notes,
+            text: Strings.terms_services,
+            rightImageAsset: Images.right_arrow,
+              leftImageHeight: 24,
+              leftImageWidth: 24,
+          ),
+          const CustomListTile(leftImageAsset: Images.privacy_policy,
+            text: Strings.privacy_policy,
+            rightImageAsset: Images.right_arrow,
+            leftImageHeight: 24,
+            leftImageWidth: 24,
+          ),
+          const CustomListTile(leftImageAsset: Images.open_source,
+            text: Strings.open_source,
+            rightImageAsset: Images.right_arrow,
+            leftImageHeight: 22,
+            leftImageWidth: 22,
+          ),
+          SizedBox(height: 10,),
+          Text(
+            Strings.version,
+            style: AppStyles.opacityNormalTextStyle,
           ),
         ],
       ),
