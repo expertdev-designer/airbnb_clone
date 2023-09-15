@@ -65,8 +65,12 @@ class Strings {
 
 // Edit Profile
 
+  static const done = "Done";
+  static const add = "Add";
   static const edit_profile = "Edit profile";
   static const the_information_you_share = "The information you share will be used across \nAirdnd to help other guests and Hosts get to \nknow you. Learn More";
+  static const know_you = "know you.";
+  static const learn_more = "Learn More";
   static const where_i_went_to_school = "Where I went to school";
   static const my_work = "My Work";
   static const where_i_live = "Where I Live";
@@ -82,4 +86,13 @@ class Strings {
   static const What_for_breakfast = "What’s for breakfast";
   static const things_i_always_do_for_guests = "Things I always do for guests";
   static const what_makes_my_home_unique = "What makes my home unique";
+  static const about_you = "About you";
+  static const write_something_fun_and_punchy = "Write something fun and punchy";
+  static const add_intro = "Add intro";
+  static const what_youre_into = "What you’re into";
+  static const find_common_ground = "Find common ground with other guests and \nHosts by adding interests to your profile.";
+  static const add_interests_and_supports = "Add interests and sports";
+  static const your_past_trips = "Your Past Trips";
+  static const show_the_destinations = "Show the destinations I’ve travelled";
+//Show the destinations I’ve travelled
 }

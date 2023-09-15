@@ -44,8 +44,21 @@ class Images{
   static const String globe = 'assets/images/globe.svg';
   static const String languages = 'assets/images/languages.svg';
   static const String ballon = 'assets/images/ballon.svg';
+  static const String music = 'assets/images/music.svg';
+  static const String heart = 'assets/images/heart.svg';
+  static const String fun_fact = 'assets/images/fun_fact.svg';
+  static const String skill = 'assets/images/skill.svg';
+  static const String book = 'assets/images/book.svg';
+  static const String clock = 'assets/images/clock.svg';
+  static const String pets = 'assets/images/pets.svg';
+  static const String breakfast = 'assets/images/breakfast.svg';
+  static const String hand = 'assets/images/hand.svg';
+  static const String stars = 'assets/images/stars.svg';
 
-//  CreateProfile
+//  CreateProfile -- Edit Profile
 
   static const String create_profile = 'assets/images/create_profile.png';
+  static const String camera = 'assets/images/camera.svg';
+  static const String plus = 'assets/images/plus.svg';
+
 }

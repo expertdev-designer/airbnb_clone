@@ -28,7 +28,19 @@ class _CreateProfileState extends State<CreateProfile> {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-
+                        showModalBottomSheet(
+                          shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(30),
+                              topRight: Radius.circular(30),
+                            ),
+                          ),
+                          context: context,
+                          isScrollControlled: true,
+                          builder: (context) {
+                            return EditProfileBottomSheet(); // Display the bottom sheet here
+                          },
+                        );
                       },
                       child: Text(
                         Strings.edit,
@@ -70,7 +82,7 @@ class _CreateProfileState extends State<CreateProfile> {
                 ],
               ),
             ),
-            SizedBox(height: 26),
+            const SizedBox(height: 26),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -78,12 +90,12 @@ class _CreateProfileState extends State<CreateProfile> {
                     Strings.identity_verification,
                     style: AppStyles.lightBlackSemiBold
                 ),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 Text(
                     Strings.show_identity_verification,
                     style: AppStyles.lightBlackTextStyle,
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Container(
                   width: 159,
                   height: 50,
@@ -99,9 +111,9 @@ class _CreateProfileState extends State<CreateProfile> {
                 ),
               ],
             ),
-            SizedBox(height: 20),
-            Divider(),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
+            const Divider(),
+            const SizedBox(height: 20),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -109,14 +121,14 @@ class _CreateProfileState extends State<CreateProfile> {
                   Strings.time_to_create_profile,
                   style: AppStyles.lightBlackNormalTwentyTwo,
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(
                  Strings.your_airbnb_profile_is_an_important_part,
                  style: AppStyles.greyfourteenStyle,
             ),
               ],
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(
               width: 343,
                 height: 47,

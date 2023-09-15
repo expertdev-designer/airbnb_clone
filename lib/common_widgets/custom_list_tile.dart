@@ -1,41 +1,53 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../utils/app_styles.dart';
+
 class CustomListTile extends StatelessWidget {
   final String leftImageAsset;
-  final double leftImageWidth; // Width for the left image
-  final double leftImageHeight; // Height for the left image
+  final double leftImageWidth;
+  final double leftImageHeight;
   final String text;
-  final String? rightImageAsset; // Make it optional
+  final TextStyle? textStyle;
+  final String? rightImageAsset;
+  final VoidCallback? onTap;
 
   const CustomListTile({
     required this.leftImageAsset,
-    this.leftImageWidth = 28.0, // Default width is 30
-    this.leftImageHeight = 28.0, // Default height is 30
+    this.leftImageWidth = 28.0,
+    this.leftImageHeight = 28.0,
     required this.text,
-    this.rightImageAsset, // Make it optional
+    this.textStyle,
+    this.rightImageAsset,
+    this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ListTile(
-          leading: SvgPicture.asset(
-            leftImageAsset,
-            width: leftImageWidth,
-            height: leftImageHeight,
+        GestureDetector(
+          onTap: onTap,
+          child: ListTile(
+            leading: SvgPicture.asset(
+              leftImageAsset,
+              width: leftImageWidth,
+              height: leftImageHeight,
+            ),
+            title: Text(
+              text,
+              style: textStyle ?? AppStyles.listTileTextStyle,
+            ),
+            trailing: rightImageAsset != null
+                ? SvgPicture.asset(
+              rightImageAsset!,
+              width: 25,
+              height: 25,
+            )
+                : null, // Use null if rightImageAsset is not provided
           ),
-          title: Text(text),
-          trailing: rightImageAsset != null
-              ? SvgPicture.asset(
-            rightImageAsset!,
-            width: 25,
-            height: 25,
-          )
-              : null, // Use null if rightImageAsset is not provided
         ),
-        const Divider(), // Add a divider after each ListTile
+        const Divider(),
       ],
     );
   }

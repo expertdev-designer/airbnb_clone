@@ -40,6 +40,12 @@ class AppStyles{
     fontWeight: FontWeight.normal,
   );
 
+  static TextStyle lightGreyTextStyle = GoogleFonts.poppins(
+    color: AppColors.light_grey,
+    fontSize: 15,
+    fontWeight: FontWeight.normal,
+  );
+
   static TextStyle greyTextStyle = GoogleFonts.poppins(
     color: AppColors.grey,
     fontSize: 15,
@@ -54,6 +60,13 @@ class AppStyles{
     color: AppColors.color_black,
     fontSize: 14,
     fontWeight: FontWeight.normal,
+  );
+
+  static TextStyle underlinedGreyBlue = GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 15,
+    fontWeight: FontWeight.w500,
+    decoration: TextDecoration.underline,
   );
 
   static TextStyle underlinedTextStyle = GoogleFonts.poppins(
@@ -83,7 +96,16 @@ class AppStyles{
     fontSize: 16,
     fontWeight: FontWeight.normal,
   );
-
+  static TextStyle listTileTextStyle = GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 16,
+    fontWeight: FontWeight.normal,
+  );
+  static TextStyle fifteenGreyBlue = GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 12,
+    fontWeight: FontWeight.normal,
+  );
   static TextStyle opacityEightyStyle = GoogleFonts.poppins(
     color: AppColors.color_black.withOpacity(0.80),
     fontSize: 16,
@@ -130,11 +152,17 @@ class AppStyles{
     fontSize: 16,
     fontWeight: FontWeight.w600,
   );
+  static TextStyle semiBoldGreyBlueStyle = GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+  );
   static TextStyle normalBlueStyle = GoogleFonts.poppins(
     color: AppColors.grey_blue.withOpacity(0.80),
     fontSize: 18,
     fontWeight: FontWeight.normal,
   );
+
   static TextStyle eighteenSemiBold = GoogleFonts.poppins(
     color: AppColors.grey_blue,
     fontSize: 18,

@@ -21,6 +21,12 @@ class _ConfirmYourNumberPageState extends State<ConfirmYourNumberPage> {
 
   void _showMoreOptionsBottomSheet() {
     showModalBottomSheet(
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(30),
+          topRight: Radius.circular(30),
+        ),
+      ),
       context: context,
       isScrollControlled: true,
       builder: (context) {
