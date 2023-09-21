@@ -27,7 +27,7 @@ class CustomListTile extends StatelessWidget {
     return Column(
       children: [
         GestureDetector(
-          onTap: onTap,
+          onTap: onTap, // Use the provided onTap callback if it's not null
           child: ListTile(
             leading: SvgPicture.asset(
               leftImageAsset,

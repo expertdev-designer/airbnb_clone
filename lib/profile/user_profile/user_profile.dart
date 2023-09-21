@@ -2,13 +2,14 @@ import 'package:airbnb/common_widgets/custom_list_tile.dart';
 import 'package:airbnb/home/home_screen.dart';
 import 'package:airbnb/login/login_page.dart';
 import 'package:airbnb/profile/create_profile.dart';
+import 'package:airbnb/profile/user_profile/personal_info.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import '../common_widgets/custom_button.dart';
-import '../utils/Images.dart';
-import '../utils/app_colors.dart';
-import '../utils/app_strings.dart';
-import '../utils/app_styles.dart';
+import '../../common_widgets/custom_button.dart';
+import '../../utils/Images.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/app_strings.dart';
+import '../../utils/app_styles.dart';
 
 class UserProfilePage extends StatelessWidget {
   const UserProfilePage({super.key});
@@ -122,7 +123,7 @@ class UserProfilePage extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.only(right: 12),
                       child: SvgPicture.asset(
-                        Images.th_image,
+                        Images.villa_image,
                       ),
                     ),
                   ),
@@ -138,28 +139,82 @@ class UserProfilePage extends StatelessWidget {
             style: AppStyles.twentyTwoSemiBold,
           ),
           SizedBox(height: 10),
-          const CustomListTile(leftImageAsset: Images.person,
+          CustomListTile(leftImageAsset: Images.person,
             text: Strings.personal_information,
-            rightImageAsset: Images.right_arrow,),
+            rightImageAsset: Images.right_arrow,
+          onTap: () {
+           Navigator.push(context, MaterialPageRoute(builder: (context) => const PersonalInfo() ));
+           },
+          ),
           const CustomListTile(leftImageAsset: Images.shield,
             text: Strings.login_security,
             rightImageAsset: Images.right_arrow,),
-          const CustomListTile(leftImageAsset: Images.payments,
+          const CustomListTile(leftImageAsset: Images.taxes,leftImageHeight: 20,
+            leftImageWidth: 24,
             text: Strings.paymenyts_payouts,
             rightImageAsset: Images.right_arrow,),
           const CustomListTile(leftImageAsset: Images.accessibility,
             text: Strings.accessibility,
             rightImageAsset: Images.right_arrow,),
-          const CustomListTile(leftImageAsset: Images.taxes, leftImageHeight: 21,
-            leftImageWidth: 25,
+          const CustomListTile(leftImageAsset: Images.payments,
             text: Strings.taxes,
             rightImageAsset: Images.right_arrow,
           ),
-          SizedBox(height: 10,),
-          Text(
-            Strings.version,
-            style: AppStyles.opacityNormalTextStyle,
+          const CustomListTile(leftImageAsset: Images.languages,
+            text: Strings.translation,
+            rightImageAsset: Images.right_arrow,
           ),
+          const CustomListTile(leftImageAsset: Images.bell,leftImageHeight: 25,
+            leftImageWidth: 25,
+            text: Strings.notification,
+            rightImageAsset: Images.right_arrow,
+          ),
+          const CustomListTile(leftImageAsset: Images.lock,
+            text: Strings.privacy_and_sharing,
+            rightImageAsset: Images.right_arrow,
+          ),
+          const CustomListTile(leftImageAsset: Images.office_bag, leftImageHeight: 21,
+            leftImageWidth: 25,
+            text: Strings.travel_for_work,
+            rightImageAsset: Images.right_arrow,
+          ),
+          SizedBox(height: 20),
+          Text(
+            Strings.hosting,
+            style: AppStyles.twentyTwoSemiBold,
+          ),
+          SizedBox(height: 20),
+          const CustomListTile(leftImageAsset: Images.double_arrow,
+            text: Strings.switch_to_hosting,
+            rightImageAsset: Images.right_arrow,
+          ),
+          SizedBox(height: 20),
+          Text(
+            Strings.support,
+            style: AppStyles.twentyTwoSemiBold,
+          ),
+          SizedBox(height: 20),
+          const CustomListTile(leftImageAsset: Images.question_mark,
+            text: Strings.visit_help_center,
+            rightImageAsset: Images.right_arrow,
+          ),
+          const CustomListTile(leftImageAsset: Images.safety_issue,
+            text: Strings.get_help_safety_issue,
+            rightImageAsset: Images.right_arrow,
+          ),
+          const CustomListTile(leftImageAsset: Images.headphones,
+            text: Strings.report_neighbourhood,
+            rightImageAsset: Images.right_arrow,
+          ),
+          const CustomListTile(leftImageAsset: Images.tutorial,
+            text: Strings.how_airbnb_works,
+            rightImageAsset: Images.right_arrow,
+          ),
+          const CustomListTile(leftImageAsset: Images.pen,
+            text: Strings.give_us_feedback,
+            rightImageAsset: Images.right_arrow,
+          ),
+
         ],
       ),
     );

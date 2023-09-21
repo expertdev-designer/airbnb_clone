@@ -29,7 +29,7 @@ class Strings {
   static const login_to_start = "Log in to start planning your next trip.";
   static const donot_have_an_account = "Don't have an account?";
   static const search = "Search";
-  static const wishlist = "Wishlist";
+  static const wishlist = "Wishlists";
   static const trip = "Trips";
   static const inbox = "Inbox";
   static const version = "Version 23.34(28001207)";
@@ -95,4 +95,39 @@ class Strings {
   static const your_past_trips = "Your Past Trips";
   static const show_the_destinations = "Show the destinations I’ve travelled";
 //Show the destinations I’ve travelled
+
+// UserProfile
+  static const translation = "Translation";
+  static const notification = "Notification";
+  static const privacy_and_sharing = "Privacy and sharing";
+  static const travel_for_work = "Travel for work";
+  static const hosting = "Hosting";
+  static const switch_to_hosting = "Switch to hosting";
+  static const support = "Support";
+  static const visit_help_center = "Visit the help center";
+  static const get_help_safety_issue = "Get help with a safety issue";
+  static const report_neighbourhood = "Report a neighbourhood concern";
+  static const how_airbnb_works = "How Airbnb works";
+  static const give_us_feedback = "Give us Feedback";
+  static const airbnb_support = "Airbnb Support\nHi Harshit, As stated in my earlier ...";
+
+//  trips
+
+  static const no_trips_booked_yet = "No trips booked ...yet!";
+  static const time_to_dust_off = "Time to dust off your bags and start planning\nyour next  adventure";
+  static const start_searching = "Start Searching";
+  static const cant_find_your_reservation = "Can’t find your reservation here?";
+  static const visit_the_help_center = "Visit the";
+  static const help_center = "Help Centre";
+// wishlist
+
+  static const create_your_first_wishlist = "Create your first Wishlist";
+  static const as_you_search = "As you search, tap the heart icon to save your\nfavourite places and Experiences to a wishlist.";
+
+// personal info
+  static const personal_info = "Personal Info";
+  static const legal_name = "Legal Name";
+  static const john_doe = "John Doe";
+  static const phone_number = "Phone Number";
+  static const add_a_number_so_confirmed_guests = "Add a number so confirmed guests and\nAirbnb can get in touch. You can add other\nnumber and choose how they're used";
 }

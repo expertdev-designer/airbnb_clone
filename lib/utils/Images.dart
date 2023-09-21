@@ -11,7 +11,6 @@ class Images{
   static const String farm = 'assets/images/farm.svg';
   static const String property = 'assets/images/property.png';
   static const String location_icon = 'assets/images/location_icon.svg';
-  static const String villa = 'assets/images/villa.svg';
   static const String farm_img = 'assets/images/farm_image.png';
   static const String msgs = 'assets/images/message.svg';
   static const String phone = 'assets/images/phone.svg';
@@ -24,7 +23,8 @@ class Images{
   static const String bell = 'assets/images/bell.svg';
   static const String user_profile = 'assets/images/user_profile.jpg';
   static const String userprofile = 'assets/images/userprofile.png';
-  static const String th_image = 'assets/images/3d_image.png';
+  static const String villa_image = 'assets/images/villa.png';
+  static const String lock = 'assets/images/lock.svg';
 
   //List Tile
   static const String learn_hosting = 'assets/images/learn_hosting.svg';
@@ -54,11 +54,17 @@ class Images{
   static const String breakfast = 'assets/images/breakfast.svg';
   static const String hand = 'assets/images/hand.svg';
   static const String stars = 'assets/images/stars.svg';
+  static const String safety_issue = 'assets/images/safety_issue.svg';
+  static const String double_arrow = 'assets/images/double_arrow.svg';
+  static const String headphones = 'assets/images/headphones.svg';
+  static const String tutorial = 'assets/images/tutorial.svg';
+  static const String pen = 'assets/images/pen.svg';
 
 //  CreateProfile -- Edit Profile
 
   static const String create_profile = 'assets/images/create_profile.png';
   static const String camera = 'assets/images/camera.svg';
   static const String plus = 'assets/images/plus.svg';
+  static const String chat_bot = 'assets/images/chat_bot.svg';
 
 }
