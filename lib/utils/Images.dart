@@ -66,5 +66,8 @@ class Images{
   static const String camera = 'assets/images/camera.svg';
   static const String plus = 'assets/images/plus.svg';
   static const String chat_bot = 'assets/images/chat_bot.svg';
-
+  static const String summertime_goa = 'assets/images/Summertime_goa.png';
+  static const String door = 'assets/images/door.svg';
+  static const String key = 'assets/images/key.svg';
+  static const String mountain = 'assets/images/mountain.svg';
 }

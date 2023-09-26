@@ -7,7 +7,7 @@ class Strings {
   static const cnfrm_number = "We'll call or text you to confirm your number. Standard \nmessage and data rates apply.";
   static const or = "or";
   static const continue_text = "Continue";
-  static const email = "Continue with Email";
+  static const continue_with_email = "Continue with Email";
   static const google = "Continue with Google";
   static const facebook = "Continue with Facebook";
   static const apple = "Continue with Apple";
@@ -129,5 +129,63 @@ class Strings {
   static const legal_name = "Legal Name";
   static const john_doe = "John Doe";
   static const phone_number = "Phone Number";
-  static const add_a_number_so_confirmed_guests = "Add a number so confirmed guests and\nAirbnb can get in touch. You can add other\nnumber and choose how they're used";
+  static const add_a_number_so_confirmed_guests = "Add a number so confirmed guests and\nAirbnb can get in touch. You can add other\nnumber and choose how they're used.";
+  static const j_gmail = "J******e@gmail.com";
+  static const email = "Email";
+  static const address = "Address";
+  static const not_provided = "Not Provided";
+  static const emergency_contact = "Emergency Contact";
+  static const government_id = "Government ID";
+  static const add_phone_number = "Add phone number";
+  static const we_will_text_a_code_to_verify = "We’ll text a code to verify your number. Standard message\nand data rates apply.";
+  static const verify = "Verify";
+  static const cancel = "Cancel";
+  static const this_is_the_name_in_your_travel = "This is the name in your travel document,\nwhich could be a licence or a passport.";
+  static const first_name = "First Name";
+  static const last_name = "Last Name";
+  static const use_a_permanent_address = "Use a permanent address where where you can\nrecieve mail.";
+  static const street = "Street";
+  static const flat_suite_optional = "Flat, suite (optional)";
+  static const country_optional = "County (optional)";
+  static const postcode_optional = "Postcode (optional)";
+  static const address_region = "Address/region";
+  static const city = "City";
+  static const save = "Save";
+  static const no_trips_yet = "No trips yet";
+  static const when_you_are_ready_to_plan_your_next_trip = "When you’re ready to plan your next trip,\nwe’re here to help";
+  static const login_to_view_your_wishlists = "Login to view your wishlists";
+  static const you_can_create_view_or_edit_wishlists = "You can create, view, or edit wishlists once\nyou’ve logged in.";
+  static const login_to_see_messages = "Login to see messages";
+  static const once_you_login_you_find_messages = "Once you log in, you’ll find messages from\nhosts here.";
+  static const tiracol_india = "Tiracol, India";
+  static const kilometer_away = "374 Kilometer away";
+  static const sep = "Sep 5- 10";
+  static const price_night = "10,000 night";
+
+//  ProfileInfo
+
+  static const cosy_a_frame_cabin_in_jibhi_valley = "Cosy A frame Cabin in\nJibhi Valley";
+  static const india = "India";
+  static const jibhi_himachal_pradesh = "Jibhi, Himachal Pradesh,";
+  static const eight_reviews = "8 Reviews";
+  static const five_star = "5.0";
+  static const entire_cabin_hosted_by_akshay = "Entire cabin hosted by\nAkshay";
+  static const four_guests = "4 guests";
+  static const four_bedrooms = "4 bedrooms";
+  static const two_beds = "2 beds";
+  static const one_bath = "1 bath";
+  static const self_check_in = "Self check-in";
+  static const you_can_check_in_with_the_building_staff = "You can check in with the building staff";
+  static const great_check_in_experience = "Great check-in experience";
+  static const hundred_percent_of_recent_guests = "100% of recent guests gave the check-in\nprocess 5-star rating";
+  static const furry_friends_welcome = "Furry friends welcome";
+  static const kick_back_and_relax_in_this_calm = "Kick back and relax in this calm, stylish\nspace";
+  static const beautiful_a_frame_cabin = "Beautiful A frame cabin amidst pine trees.";
+  static const breakfast_meals_room_heaters = "Breakfast, meals, room heaters and\nbonfire is available exclusive of stay price....";
+  static const where_you_sleep = "Where you’ll sleep";
+  static const bedroom = "Bedroom";
+  static const one_doublebed = "1 double bed";
+  static const living_room = "Living room";
+  static const what_this_place_offers = "What this place offers";
+
 }

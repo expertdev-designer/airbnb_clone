@@ -11,6 +11,7 @@ class CustomListTile extends StatelessWidget {
   final TextStyle? textStyle;
   final String? rightImageAsset;
   final VoidCallback? onTap;
+  final bool showDivider;
 
   const CustomListTile({
     required this.leftImageAsset,
@@ -20,6 +21,7 @@ class CustomListTile extends StatelessWidget {
     this.textStyle,
     this.rightImageAsset,
     this.onTap,
+    this.showDivider = true, // Default to showing the Divider
   });
 
   @override
@@ -27,7 +29,7 @@ class CustomListTile extends StatelessWidget {
     return Column(
       children: [
         GestureDetector(
-          onTap: onTap, // Use the provided onTap callback if it's not null
+          onTap: onTap,
           child: ListTile(
             leading: SvgPicture.asset(
               leftImageAsset,
@@ -44,10 +46,10 @@ class CustomListTile extends StatelessWidget {
               width: 25,
               height: 25,
             )
-                : null, // Use null if rightImageAsset is not provided
+                : null,
           ),
         ),
-        const Divider(),
+        if (showDivider) const Divider(), // Show the Divider conditionally
       ],
     );
   }

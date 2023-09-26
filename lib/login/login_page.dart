@@ -107,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
                     width: 328,
                     height: 47,
                     child: CustomButtonWithImage(
-                      text: Strings.email,
+                      text: Strings.continue_with_email,
                       onPressed: () {},
                       textStyle: AppStyles.continueTextStyle,
                       backgroundColor: AppColors.color_white,

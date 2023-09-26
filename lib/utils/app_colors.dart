@@ -14,8 +14,8 @@ class AppColors {
   static const dark_pink = Color(0xFFD80566);
   static const light_grey = Color(0xFF959595);
   static const divider_color = Color(0xFFE7E7E7);
-
-
+  static const button_pink = Color(0xFFD70465);
+  //D70465
   static const pinkGradient = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,

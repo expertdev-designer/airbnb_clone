@@ -26,8 +26,12 @@ class AppStyles{
     fontSize: 12,
     fontWeight: FontWeight.normal,
   );
-
-  static TextStyle fifteenGreyBlue = GoogleFonts.poppins(
+  static TextStyle twelveLightGrey = GoogleFonts.poppins(
+    color: AppColors.light_grey,
+    fontSize: 12,
+    fontWeight: FontWeight.normal,
+  );
+  static TextStyle twelveGreyBlue = GoogleFonts.poppins(
     color: AppColors.grey_blue,
     fontSize: 12,
     fontWeight: FontWeight.normal,
@@ -85,6 +89,11 @@ class AppStyles{
     fontWeight: FontWeight.normal,
   );
 
+  static TextStyle whiteMediumTextStyle = GoogleFonts.poppins(
+    color: AppColors.color_white,
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
   static TextStyle continueTextStyle = GoogleFonts.poppins(
     color: AppColors.grey_blue,
     fontSize: 14,
@@ -120,6 +129,17 @@ class AppStyles{
     fontSize: 15,
     fontWeight: FontWeight.normal,
   );
+  static TextStyle fifteenGreyBlue = GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 15,
+    fontWeight: FontWeight.normal,
+  );
+  static TextStyle greyMediumTextStyle = GoogleFonts.poppins(
+    color: AppColors.grey,
+    fontSize: 15,
+    fontWeight: FontWeight.w500,
+  );
+
   static TextStyle lightBlackTextStyle = GoogleFonts.poppins(
     color: AppColors.light_black,
     fontSize: 15,
@@ -135,6 +155,16 @@ class AppStyles{
 
   //16 textstyle
 
+  static TextStyle sixteenLightGrey = GoogleFonts.poppins(
+    color: AppColors.light_grey, // Adjust opacity here
+    fontSize: 16,
+    fontWeight: FontWeight.normal,
+  );
+  static TextStyle sixteenGrey = GoogleFonts.poppins(
+    color: AppColors.grey, // Adjust opacity here
+    fontSize: 16,
+    fontWeight: FontWeight.normal,
+  );
   static TextStyle normalSixteenTextStyle = GoogleFonts.poppins(
     color: AppColors.color_black,
     fontSize: 16,
@@ -165,8 +195,19 @@ class AppStyles{
     fontWeight: FontWeight.w600,
   );
 
+  static TextStyle mediumGreyBlueStyle = GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+  );
+
   static TextStyle semiBoldGreyBlueStyle = GoogleFonts.poppins(
     color: AppColors.grey_blue,
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle sixteenVeryLightBlack = GoogleFonts.poppins(
+    color: AppColors.very_lightBlack,
     fontSize: 16,
     fontWeight: FontWeight.w600,
   );
@@ -213,6 +254,12 @@ class AppStyles{
     fontWeight: FontWeight.w600,
   );
 
+  static TextStyle twentyTwoMedium= GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 22,
+    fontWeight: FontWeight.w500,
+  );
+
   static TextStyle lightBlacktwentyTwo= GoogleFonts.poppins(
     color: AppColors.light_black,
     fontSize: 22,
@@ -228,6 +275,14 @@ class AppStyles{
   static TextStyle lightBlackSemiBold = GoogleFonts.poppins(
     color: AppColors.light_black,
     fontSize: 22,
+    fontWeight: FontWeight.w600,
+  );
+
+  //26
+
+  static TextStyle twentysixSemiBold = GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 26,
     fontWeight: FontWeight.w600,
   );
 
@@ -247,7 +302,13 @@ class AppStyles{
     fontWeight: FontWeight.w600,
   );
 
+  //36
 
+  static TextStyle headingTextStyle = GoogleFonts.poppins(
+    color: AppColors.very_lightBlack,
+    fontSize: 36,
+    fontWeight: FontWeight.w500,
+  );
   static BoxDecoration searchBoxDecoration = BoxDecoration(
     color: AppColors.color_white,
     borderRadius: BorderRadius.circular(30),
