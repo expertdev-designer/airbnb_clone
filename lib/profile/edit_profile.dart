@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../common_widgets/advance_switch.dart';
-import '../common_widgets/custom_button.dart';
-import '../common_widgets/custom_list_tile.dart';
-import '../common_widgets/eleveated_custom_button.dart';
+import '../common_widgets/buttons/custom_button.dart';
+import '../common_widgets/list_items/custom_list_tile.dart';
+import '../common_widgets/buttons/eleveated_custom_button.dart';
 import '../utils/Images.dart';
 import '../utils/app_strings.dart';
 import '../utils/app_styles.dart';

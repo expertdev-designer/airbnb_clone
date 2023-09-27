@@ -103,8 +103,8 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
         unselectedItemColor: AppColors.grey_blue, // Color when not selected
         showSelectedLabels: true,
         showUnselectedLabels: true,
-        selectedLabelStyle: AppStyles.listTextStyle, // Apply the text style to selected labels
-        unselectedLabelStyle: AppStyles.listTextStyle,
+        selectedLabelStyle: AppStyles.twelveGreyBlue, // Apply the text style to selected labels
+        unselectedLabelStyle: AppStyles.twelveGreyBlue,
       ),
     );
   }

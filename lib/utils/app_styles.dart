@@ -37,12 +37,6 @@ class AppStyles{
     fontWeight: FontWeight.normal,
   );
 
-  static TextStyle listTextStyle = GoogleFonts.poppins(
-    color: AppColors.grey_blue,
-    fontSize: 12,
-    fontWeight: FontWeight.normal,
-  );
-
   //13 text style
 
   static TextStyle thirteenGreyBlue = GoogleFonts.poppins(
@@ -134,6 +128,11 @@ class AppStyles{
     fontSize: 15,
     fontWeight: FontWeight.normal,
   );
+  static TextStyle fifteenGreyBlueMedium= GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 15,
+    fontWeight: FontWeight.w500,
+  );
   static TextStyle greyMediumTextStyle = GoogleFonts.poppins(
     color: AppColors.grey,
     fontSize: 15,
@@ -144,6 +143,13 @@ class AppStyles{
     color: AppColors.light_black,
     fontSize: 15,
     fontWeight: FontWeight.normal,
+  );
+
+  static TextStyle fifteenNormalUnderlinedGreyBlue = GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 15,
+    fontWeight: FontWeight.normal,
+    decoration: TextDecoration.underline,
   );
 
   static TextStyle underlinedGreyBlue = GoogleFonts.poppins(
@@ -211,7 +217,12 @@ class AppStyles{
     fontSize: 16,
     fontWeight: FontWeight.w600,
   );
-
+  static TextStyle sixteenUnderlinedSemiboldGreyBlue = GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    decoration: TextDecoration.underline,
+  );
   //18 textstyle
 
   static TextStyle normalBlueStyle = GoogleFonts.poppins(
@@ -309,6 +320,9 @@ class AppStyles{
     fontSize: 36,
     fontWeight: FontWeight.w500,
   );
+
+  // Box decorations
+
   static BoxDecoration searchBoxDecoration = BoxDecoration(
     color: AppColors.color_white,
     borderRadius: BorderRadius.circular(30),
@@ -332,6 +346,14 @@ class AppStyles{
         offset: const Offset(0, 3),
       ),
     ],
+  );
+
+  static BoxDecoration reviewContainerBoxDecoration = BoxDecoration(
+    color: AppColors.color_white,
+    borderRadius: BorderRadius.circular(13),
+    border: Border.all(
+      color: AppColors.very_light_grey
+    ),
   );
 
   static BoxDecoration pinkGradientBoxDecoration = BoxDecoration(

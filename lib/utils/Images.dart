@@ -70,4 +70,9 @@ class Images{
   static const String door = 'assets/images/door.svg';
   static const String key = 'assets/images/key.svg';
   static const String mountain = 'assets/images/mountain.svg';
+  static const String garden = 'assets/images/garden.svg';
+  static const String wifi = 'assets/images/wifi.svg';
+  static const String car = 'assets/images/car.svg';
+  static const String chair = 'assets/images/chair.svg';
+
 }

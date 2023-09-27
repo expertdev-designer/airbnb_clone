@@ -1,4 +1,4 @@
-import 'package:airbnb/common_widgets/custom_button.dart';
+import 'package:airbnb/common_widgets/buttons/custom_button.dart';
 import 'package:airbnb/inbox/inbox_login_page.dart';
 import 'package:airbnb/utils/app_styles.dart';
 import 'package:flutter/material.dart';

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../utils/app_colors.dart';
+import '../../utils/app_colors.dart';
 
-class CustomButtonWithImage extends StatelessWidget {
+class ElevatedCustomButton extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
   final Color? backgroundColor;
@@ -13,7 +13,7 @@ class CustomButtonWithImage extends StatelessWidget {
   final double? imageHeight;
   final String svgImagePath;
 
-  CustomButtonWithImage({
+  ElevatedCustomButton({
     required this.text,
     required this.onPressed,
     required this.textStyle,
@@ -30,22 +30,20 @@ class CustomButtonWithImage extends StatelessWidget {
       onTap: onPressed,
       borderRadius: BorderRadius.circular(borderRadius ?? 0.0),
       child: Container(
-        padding: EdgeInsets.all(10.0),
         decoration: BoxDecoration(
           color: backgroundColor,
           borderRadius: BorderRadius.circular(borderRadius ?? 0.0),
           border: Border.all(color: AppColors.color_black.withOpacity(0.50), width: 0.8),
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(width: 10),
             SvgPicture.asset(
               svgImagePath,
               width: imageWidth ?? 24,
               height: imageHeight ?? 24,
             ),
-            SizedBox(width: 30),
+            SizedBox(width: 4),
             Text(
               text,
               style: textStyle,

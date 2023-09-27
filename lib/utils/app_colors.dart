@@ -13,6 +13,7 @@ class AppColors {
   static const very_lightBlack = Color(0xFF252525);
   static const dark_pink = Color(0xFFD80566);
   static const light_grey = Color(0xFF959595);
+  static const very_light_grey = Color(0xFFD9D9D9);
   static const divider_color = Color(0xFFE7E7E7);
   static const button_pink = Color(0xFFD70465);
   //D70465

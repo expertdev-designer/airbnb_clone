@@ -1,8 +1,8 @@
-import 'package:airbnb/common_widgets/custom_list_tile.dart';
+import 'package:airbnb/common_widgets/list_items/custom_list_tile.dart';
 import 'package:airbnb/home/home_screen.dart';
 import 'package:airbnb/login/login_page.dart';
 import 'package:flutter/material.dart';
-import '../common_widgets/custom_button.dart';
+import '../common_widgets/buttons/custom_button.dart';
 import '../utils/Images.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_strings.dart';

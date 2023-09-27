@@ -1,10 +1,10 @@
-import 'package:airbnb/common_widgets/list_image_item.dart';
+import 'package:airbnb/common_widgets/list_items/property_list.dart';
 import 'package:airbnb/home/property/property_info.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../common_widgets/advance_switch.dart';
-import '../common_widgets/list_item.dart';
+import '../common_widgets/list_items/places_list.dart';
 import '../utils/Images.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_strings.dart';
@@ -78,34 +78,34 @@ class _HomeScreenState extends State<HomeScreen> {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  ListItem(
+                  PlacesList(
                     imagePath: Images.beach, text: 'london',
                   ),
-                  ListItem(
+                  PlacesList(
                     imagePath: Images.farm, text: 'Farm',
                   ),
-                  ListItem(
+                  PlacesList(
                     imagePath: Images.beach, text: 'london',
                   ),
-                  ListItem(
+                  PlacesList(
                     imagePath: Images.farm, text: 'Farm',
                   ),
-                  ListItem(
+                  PlacesList(
                     imagePath: Images.beach, text: 'london',
                   ),
-                  ListItem(
+                  PlacesList(
                     imagePath: Images.farm, text: 'Farm',
                   ),
-                  ListItem(
+                  PlacesList(
                     imagePath: Images.beach, text: 'london',
                   ),
-                  ListItem(
+                  PlacesList(
                     imagePath: Images.farm, text: 'Farm',
                   ),
-                  ListItem(
+                  PlacesList(
                     imagePath: Images.beach, text: 'london',
                   ),
-                  ListItem(
+                  PlacesList(
                     imagePath: Images.farm, text: 'Farm',
                   ),
                   // Add more items as needed
@@ -113,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
                 const SizedBox(height: 10),
-                ListImageItem(
+                PropertyList(
                     imagePath: Images.summertime_goa,
                       text1: Strings.tiracol_india,
                       text2: Strings.kilometer_away,
@@ -123,7 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => PropertyInfo() ));
                   },
                   ),
-                ListImageItem(
+                PropertyList(
                   imagePath: Images.summertime_goa,
                   text1: Strings.tiracol_india,
                   text2: Strings.kilometer_away,
@@ -133,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => PropertyInfo() ));
                   },
                 ),
-                ListImageItem(
+                PropertyList(
                   imagePath: Images.summertime_goa,
                   text1: Strings.tiracol_india,
                   text2: Strings.kilometer_away,
@@ -143,7 +143,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                   },
                 ),
-                ListImageItem(
+                PropertyList(
                   imagePath: Images.summertime_goa,
                   text1: Strings.tiracol_india,
                   text2: Strings.kilometer_away,
@@ -153,7 +153,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                   },
                 ),
-                ListImageItem(
+                PropertyList(
                   imagePath: Images.summertime_goa,
                   text1: Strings.tiracol_india,
                   text2: Strings.kilometer_away,

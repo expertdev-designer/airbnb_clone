@@ -3,7 +3,7 @@ import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 
 import '../../../common_widgets/country_code_input.dart';
-import '../../../common_widgets/custom_button.dart';
+import '../../../common_widgets/buttons/custom_button.dart';
 import '../../../common_widgets/editable_text_fields.dart';
 import '../../../utils/app_colors.dart';
 import '../../../utils/app_strings.dart';

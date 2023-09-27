@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import '../utils/app_styles.dart';
+import '../../utils/app_styles.dart';
 
-class RowListImageItem extends StatelessWidget {
+class RoomsList extends StatelessWidget {
   final String imagePath;
   final String text1;
   final String text2;
   final VoidCallback? onTap; // Define the onTap callback
 
-  const RowListImageItem({
+  const RoomsList({
     required this.imagePath,
     required this.text1,
     required this.text2,

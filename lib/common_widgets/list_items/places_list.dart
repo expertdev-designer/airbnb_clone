@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../utils/app_styles.dart';
+import '../../utils/app_styles.dart';
 
-class ListItem extends StatefulWidget {
+class PlacesList extends StatefulWidget {
   final String imagePath;
   final String text;
 
-  ListItem({
+  PlacesList({
     required this.imagePath,
     required this.text,
     Key? key,
   }) : super(key: key);
 
   @override
-  _ListItemState createState() => _ListItemState();
+  _PlacesListState createState() => _PlacesListState();
 }
 
-class _ListItemState extends State<ListItem> {
+class _PlacesListState extends State<PlacesList> {
   bool isSelected = false;
 
   @override
@@ -56,7 +56,7 @@ class _ListItemState extends State<ListItem> {
                 Text(
                   widget.text,
                   textAlign: TextAlign.center, // Center the text
-                  style: AppStyles.listTextStyle
+                  style: AppStyles.twelveGreyBlue
                 ),
               ],
             ),

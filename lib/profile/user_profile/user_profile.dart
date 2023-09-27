@@ -1,12 +1,13 @@
-import 'package:airbnb/common_widgets/custom_list_tile.dart';
+import 'package:airbnb/common_widgets/list_items/custom_list_tile.dart';
 import 'package:airbnb/home/home_screen.dart';
 import 'package:airbnb/login/login_page.dart';
 import 'package:airbnb/profile/create_profile.dart';
+import 'package:airbnb/profile/user_profile/personal_information/delete_your_account.dart';
 import 'package:airbnb/profile/user_profile/personal_information/personal_info.dart';
 import 'package:airbnb/trips/trips_login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import '../../common_widgets/custom_button.dart';
+import '../../common_widgets/buttons/custom_button.dart';
 import '../../utils/Images.dart';
 import '../../utils/app_colors.dart';
 import '../../utils/app_strings.dart';
@@ -151,13 +152,17 @@ class UserProfilePage extends StatelessWidget {
             text: Strings.login_security,
             rightImageAsset: Images.right_arrow,
             onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => TripLogInPage() ));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => DeleteYourAccount() ));
             },
           ),
-          const CustomListTile(leftImageAsset: Images.taxes,leftImageHeight: 20,
+          CustomListTile(leftImageAsset: Images.taxes,leftImageHeight: 20,
             leftImageWidth: 24,
             text: Strings.paymenyts_payouts,
-            rightImageAsset: Images.right_arrow,),
+            rightImageAsset: Images.right_arrow,
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => DeleteYourAccount() ));
+          },
+          ),
           const CustomListTile(leftImageAsset: Images.accessibility,
             text: Strings.accessibility,
             rightImageAsset: Images.right_arrow,),
