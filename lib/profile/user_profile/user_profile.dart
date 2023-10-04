@@ -8,6 +8,7 @@ import 'package:airbnb/trips/trips_login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../common_widgets/buttons/custom_button.dart';
+import '../../host/get_started.dart';
 import '../../utils/Images.dart';
 import '../../utils/app_colors.dart';
 import '../../utils/app_strings.dart';
@@ -194,9 +195,12 @@ class UserProfilePage extends StatelessWidget {
             style: AppStyles.twentyTwoSemiBold,
           ),
           SizedBox(height: 20),
-          const CustomListTile(leftImageAsset: Images.double_arrow,
+          CustomListTile(leftImageAsset: Images.double_arrow,
             text: Strings.switch_to_hosting,
             rightImageAsset: Images.right_arrow,
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => GetStarted() ));
+            },
           ),
           SizedBox(height: 20),
           Text(

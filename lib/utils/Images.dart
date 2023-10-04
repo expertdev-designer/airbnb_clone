@@ -74,5 +74,8 @@ class Images{
   static const String wifi = 'assets/images/wifi.svg';
   static const String car = 'assets/images/car.svg';
   static const String chair = 'assets/images/chair.svg';
+  static const String bed = 'assets/images/bed.png';
+  static const String house_door = 'assets/images/house_door.png';
+  static const String stand_out = 'assets/images/stand_out.png';
 
 }

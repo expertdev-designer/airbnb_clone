@@ -230,5 +230,27 @@ class Strings {
   static const total_before_taxes = "Total before taxes";
   static const price = "178";
   static const reserve = "Reserve";
+  static const delete_your_account = "Delete Your Account";
+  static const before_we_delete_your_data = "Before we delete your data, we’ll just need\nyou to answer a few questions. To confirm\nyou’re the true owner of this account, we\nmay also contact you at";
+  static const learn_more_about_account_deletion = "Learn more about account deletion\nrequests.";
+  static const where_do_you_reside = "Where do you reside?";
+  static const why_are_you_deleting_your_account = "Why are you deleting your account?";
+  static const one_tell_us_about_your_place = "1  Tell us about your place";
+  static const share_some_basic_info = "Share some basic info, like\nwhere it is and how many\nguests can stay.";
+  static const make_it_stand_out = "2   Make it stand out";
+  static const add_five_or_more_photos = "Add 5 or more photos plus a\ntitle and description-we’ll help\nyou out.";
+  static const finish_up_and_publish = "3   Finish up and publish";
+  static const choose_if_you_like_to_start = "Choose if you’d like to start\nwith an experienced guest, set\na starting price, and publish\nyour listing.";
+  static const its_easy_to_get_started_on_airbnb = "It’s easy to get\nStarted on Airbnb";
+  static const get_started = "Get started";
+  static const save_and_exit = "Save & Exit";
+  static const questions = "Questions?";
+  static const step_one = "Step 1";
+  static const tell_us_about_your_place = "Tell us about\nyour place";
+  static const in_this_step_we_will_ask_you_which_type_of_property = "In this step, we’ll ask you which type of\nproperty you have and if guests will book\nthe entire place or just a room. Then let us\nknow the location and how many guests\ncan stay.";
+  static const back = "Back";
+  static const next = "Next";
+  static const which_of_these_best_describes_your_place = "Which of these best\ndescribes your place?";
+  static const what_type_of_place_will_guests_have = "What type of place will\nguests have";
 
 }
