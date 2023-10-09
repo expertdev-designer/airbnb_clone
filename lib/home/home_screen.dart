@@ -1,8 +1,10 @@
+import 'package:airbnb/common_widgets/list_items/property_list.dart';
+import 'package:airbnb/home/property/property_info.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../common_widgets/advance_switch.dart';
-import '../common_widgets/list_item.dart';
+import '../common_widgets/list_items/places_list.dart';
 import '../utils/Images.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_strings.dart';
@@ -22,167 +24,147 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          Column(
-           crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-           Center(
-            child: Padding(
-              padding: const EdgeInsets.only(top: 50),
-              child: GestureDetector(
-                onTap: () {
-                  // Handle tap on the search bar
-                },
-                child: Container(
-                  width: 292,
-                  height: 47,
-                  decoration: AppStyles.searchBoxDecoration,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SvgPicture.asset(
-                          Images.search,
-                          width: 18,
-                          height: 18,
-                        ),
-                        const SizedBox(width: 10),
-                        Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                Strings.where_to,
-                                style: AppStyles.normalSmallTextStyle,
-                              ),
-                              Text(
-                                Strings.anywhere,
-                                style: AppStyles.opacitySeventyStyle,
-                              ),
-                            ],
+          SingleChildScrollView(
+            child: Column(
+             crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+             Center(
+              child: Padding(
+                padding: const EdgeInsets.only(top: 50),
+                child: GestureDetector(
+                  onTap: () {
+                    // Handle tap on the search bar
+                  },
+                  child: Container(
+                    width: 292,
+                    height: 47,
+                    decoration: AppStyles.searchBoxDecoration,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          SvgPicture.asset(
+                            Images.search,
+                            width: 18,
+                            height: 18,
                           ),
-                        ),
-                      ],
+                          const SizedBox(width: 10),
+                          Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  Strings.where_to,
+                                  style: AppStyles.normalSmallTextStyle,
+                                ),
+                                Text(
+                                  Strings.anywhere,
+                                  style: AppStyles.opacitySeventyStyle,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
               ),
             ),
-          ),
-          const SizedBox(height: 30),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                ListItem(
-                  imagePath: Images.beach, text: 'london',
-                ),
-                ListItem(
-                  imagePath: Images.farm, text: 'Farm',
-                ),
-                ListItem(
-                  imagePath: Images.beach, text: 'london',
-                ),
-                ListItem(
-                  imagePath: Images.farm, text: 'Farm',
-                ),
-                ListItem(
-                  imagePath: Images.beach, text: 'london',
-                ),
-                ListItem(
-                  imagePath: Images.farm, text: 'Farm',
-                ),
-                ListItem(
-                  imagePath: Images.beach, text: 'london',
-                ),
-                ListItem(
-                  imagePath: Images.farm, text: 'Farm',
-                ),
-                ListItem(
-                  imagePath: Images.beach, text: 'london',
-                ),
-                ListItem(
-                  imagePath: Images.farm, text: 'Farm',
-                ),
-                // Add more items as needed
-              ],
-            ),
-          ),
-          const SizedBox(height: 20),
-          Center(
-            child: Container(
-              width: 334,
-              height: 65,
-              decoration: AppStyles.taxBoxDecoration,
+            const SizedBox(height: 30),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 24.0),
-                    child: Text(
-                      Strings.total_taxes,
-                      style: AppStyles.continueTextStyle,
-                    ),
+                  PlacesList(
+                    imagePath: Images.beach, text: 'london',
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 24.0),
-                    child: AdvancedSwitch(
-                      controller: _controller,
-                      activeColor: Colors.green,
-                      inactiveColor: Colors.grey,
-                      borderRadius:
-                      const BorderRadius.all(Radius.circular(15)),
-                      width: 52.0,
-                      height: 27.0,
-                      enabled: true,
-                      disabledOpacity: 0.5,
-                    ),
+                  PlacesList(
+                    imagePath: Images.farm, text: 'Farm',
                   ),
+                  PlacesList(
+                    imagePath: Images.beach, text: 'london',
+                  ),
+                  PlacesList(
+                    imagePath: Images.farm, text: 'Farm',
+                  ),
+                  PlacesList(
+                    imagePath: Images.beach, text: 'london',
+                  ),
+                  PlacesList(
+                    imagePath: Images.farm, text: 'Farm',
+                  ),
+                  PlacesList(
+                    imagePath: Images.beach, text: 'london',
+                  ),
+                  PlacesList(
+                    imagePath: Images.farm, text: 'Farm',
+                  ),
+                  PlacesList(
+                    imagePath: Images.beach, text: 'london',
+                  ),
+                  PlacesList(
+                    imagePath: Images.farm, text: 'Farm',
+                  ),
+                  // Add more items as needed
                 ],
               ),
             ),
-          ),
-          const SizedBox(height: 20),
-          Center(
-                  child: Stack(
-                    children: [
-                      Container(
-                        width: 350,
-                        height: 380,
-                        child: Image.asset(
-                          Images.property,
-                          width: 350,
-                          height: 380,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      Positioned(
-                        bottom: 20,
-                        left: 15,
-                        right: 15,
-                        child: Container(
-                          width: 323,
-                          height: 100,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        top: 20,
-                        right: 20,
-                        child: Icon(
-                          Icons.favorite,
-                          color: Colors.red,
-                          size: 24,
-                        ),
-                      ),
-                    ],
+                const SizedBox(height: 10),
+                PropertyList(
+                    imagePath: Images.summertime_goa,
+                      text1: Strings.tiracol_india,
+                      text2: Strings.kilometer_away,
+                      text3: Strings.sep,
+                      text4: Strings.price_night,
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => PropertyInfo() ));
+                  },
                   ),
+                PropertyList(
+                  imagePath: Images.summertime_goa,
+                  text1: Strings.tiracol_india,
+                  text2: Strings.kilometer_away,
+                  text3: Strings.sep,
+                  text4: Strings.price_night,
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => PropertyInfo() ));
+                  },
                 ),
-        ],
+                PropertyList(
+                  imagePath: Images.summertime_goa,
+                  text1: Strings.tiracol_india,
+                  text2: Strings.kilometer_away,
+                  text3: Strings.sep,
+                  text4: Strings.price_night,
+                  onTap: () {
+
+                  },
+                ),
+                PropertyList(
+                  imagePath: Images.summertime_goa,
+                  text1: Strings.tiracol_india,
+                  text2: Strings.kilometer_away,
+                  text3: Strings.sep,
+                  text4: Strings.price_night,
+                  onTap: () {
+
+                  },
+                ),
+                PropertyList(
+                  imagePath: Images.summertime_goa,
+                  text1: Strings.tiracol_india,
+                  text2: Strings.kilometer_away,
+                  text3: Strings.sep,
+                  text4: Strings.price_night,
+                  onTap: () {
+
+                  },
+                ),
+             ],
+            ),
           ),
           Positioned(
             bottom: 20,
@@ -190,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> {
             right: 0,
             child: Center(
               child: Container(
-                width: 122,
+                width: 98,
                 height: 47,
                 child: FloatingActionButton(
                   onPressed: () {
@@ -203,13 +185,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Row( // Use Row to combine icon and text
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SvgPicture.asset(Images.location_icon,
+                      SvgPicture.asset(
+                        Images.location_icon,
                       color: AppColors.color_white,
+                        height: 20,
+                        width: 15,
                       ),
-                      SizedBox(width: 8), // Adjust spacing between icon and text
+                      SizedBox(width: 8),
                       Text(
                         Strings.map,
-                        style: AppStyles.whiteNormalTextStyle,
+                        style: AppStyles.whiteMediumTextStyle,
                       ),
                     ],
                   ),

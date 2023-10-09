@@ -3,8 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../common_widgets/country_code_input.dart';
-import '../common_widgets/custom_button.dart';
-import '../common_widgets/custom_button_with_image.dart';
+import '../common_widgets/buttons/custom_button.dart';
+import '../common_widgets/buttons/custom_button_with_image.dart';
 import '../home/home_screen.dart';
 import '../utils/Images.dart';
 import '../utils/app_colors.dart';
@@ -107,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
                     width: 328,
                     height: 47,
                     child: CustomButtonWithImage(
-                      text: Strings.email,
+                      text: Strings.continue_with_email,
                       onPressed: () {},
                       textStyle: AppStyles.continueTextStyle,
                       backgroundColor: AppColors.color_white,

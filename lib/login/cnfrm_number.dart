@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
-import '../common_widgets/custom_button.dart';
+import '../common_widgets/buttons/custom_button.dart';
 import '../common_widgets/more_option_bottom_sheet.dart';
 import '../home/home_screen.dart';
 import '../utils/app_colors.dart';
@@ -21,6 +21,12 @@ class _ConfirmYourNumberPageState extends State<ConfirmYourNumberPage> {
 
   void _showMoreOptionsBottomSheet() {
     showModalBottomSheet(
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(30),
+          topRight: Radius.circular(30),
+        ),
+      ),
       context: context,
       isScrollControlled: true,
       builder: (context) {
