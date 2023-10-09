@@ -23,7 +23,7 @@ class _EditProfileBottomSheetState extends State<EditProfileBottomSheet> {
   @override
   Widget build(BuildContext context) {
     return FractionallySizedBox(
-      heightFactor: 0.9,
+      heightFactor: 0.95,
       child: Container(
         width: double.infinity,
         decoration: const BoxDecoration(

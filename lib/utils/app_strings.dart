@@ -123,6 +123,9 @@ class Strings {
 
   static const create_your_first_wishlist = "Create your first Wishlist";
   static const as_you_search = "As you search, tap the heart icon to save your\nfavourite places and Experiences to a wishlist.";
+  static const amazing_pools = "Amazing Pools 2023";
+  static const add_dates = "Add dates";
+  static const add_guests = "Add guests";
 
 // personal info
   static const personal_info = "Personal Info";
@@ -162,7 +165,7 @@ class Strings {
   static const sep = "Sep 5- 10";
   static const price_night = "10,000 night";
 
-//  ProfileInfo
+//  Property Info
 
   static const cosy_a_frame_cabin_in_jibhi_valley = "Cosy A frame Cabin in\nJibhi Valley";
   static const india = "India";
@@ -230,17 +233,107 @@ class Strings {
   static const total_before_taxes = "Total before taxes";
   static const price = "178";
   static const reserve = "Reserve";
+  static const safety_and_report = "Safety & property";
+
+
+  //Delete your Account
+
   static const delete_your_account = "Delete Your Account";
   static const before_we_delete_your_data = "Before we delete your data, we’ll just need\nyou to answer a few questions. To confirm\nyou’re the true owner of this account, we\nmay also contact you at";
   static const learn_more_about_account_deletion = "Learn more about account deletion\nrequests.";
   static const where_do_you_reside = "Where do you reside?";
   static const why_are_you_deleting_your_account = "Why are you deleting your account?";
+
+  // Confirm and Pay -- Cancellation policy -- House rules
+
+  static const cnfrm_and_pay = "Confirm and pay";
+  static const entire_rental_unit = "Entire rental unit";
+  static const lovely_studio_with_burj_khalifa = "Lovely Studio with Burj Khalifa\nViews from balcony";
+  static const your_trip = "Your trip";
+  static const dates = "Dates";
+  static const guests = "Guests";
+  static const price_details = "Price details";
+  static const five_nights = "\$10,375 x 5 nights";
+  static const cleaning_fee = "Cleaning fee";
+  static const airbnb_service_fee = "Airbnb service fee";
+  static const total_rupees = "\$51,875";
+  static const total = "Total";
+  static const sixty_four = "64,361.89";
+  static const more_info = "More info";
+  static const pay_with = "Pay with";
+  static const one_guest = "1 guest";
+  static const upi_id = "UPI ID";
+  static const example_your_username = "E.g. yourusername@bank";
+  static const required_for_your_trip = "Required for your trip";
+  static const msg_the_host = "Message the host";
+  static const share_why_you_are_travelling = "Share why you’re travelling, who’s\ncoming with you and what you love\nabout the space.";
+  static const add_and_confirm_your_phone_number = "Add and confirm your phone\nnumber to get trip updates";
+  static const cancel_before_for_a_partial_refund = "Cancel before 29 Sep for a pertial refund. After that\nthe reservation is non-refundable.";
+  static const ground_rules = "Ground rules";
+  static const we_ask_every_guest_to_remember_a_few_simple_things = "We ask every guest to remember a few simple things\nabout what makes a great guest.";
+  static const before_you_book_make_sure_you_are_comfortable_with_hosts_cancellation_policy = "Before you book, make sure you’re\ncomfortable with this Host’s cancellation\npolicy. Keep in mind that Our Extenuating\nCircumstances policy doesn’t cover\ncancellations due to illness or travel disruptions\ncaused by covid-19.";
+  static const cancel_by = "Cancel by";
+  static const oct_14 = "14 Oct";
+  static const full_refund_get_back = "Full refund: Get back 100% of\nwhat you paid.";
+  static const partial_refund_get_back = "Partial refund: Get back every\nnight but the first one. No\nrefund of the first night or the\nservice fee. ";
+  static const learn_more_about_cancellation_policies = "Learn more about cancellation policies";
+  static const you_will_be_staying_in_someones_home = "You’ll be staying in someone’s home, so please\ntreat it with care and respect.";
+  static const checking_in_and_out = "Checking in and out";
+  static const checkout = "Checkout: ";
+  static const two_to_five = "2:00 pm - 5:00 pm";
+  static const no_smoking = "No smoking";
+  static const request_to_book = "Request to book";
+
+  //Guests
+
+  static const this_place_has_a_maximum_of_four_guests = "This place has a maximum of 4 guests, not including infants.\nPets aren’t allowed.";
+  static const adults = "Adults";
+  static const age_13 = "Age 13+";
+  static const children = "Children";
+  static const infants = "Infants";
+  static const ages_2_12 = "Ages 2-12";
+  static const under_2 = "Under 2";
+  static const bringing_a_service_animal = "Bringing a service animal?";
+
+
+
+
+  // Message Host Contact host , price details
+
+  static const shangrila_renao_a_luxury_cabin = "Shangrila Renao - A Luxury cabin";
+  static const entire_cabin = "Entire cabin";
+  static const send_message = "Send message";
+  static const contact_hemal_typicaly = "Contact Hemal Typically\nresponds within a day";
+  static const most_travellers_ask_about = "Most travellers ask about";
+  static const getting_there = "Getting there";
+  static const free_parking_on_the_premises = "Free parking on the premises";
+  static const check_in_for_this_home_is_between = "Check-in for this home is between 1:00pm\nand 6:00 pm and checkout is at 10:00 am.";
+  static const house_details_and_rules = "House details and rules";
+  static const no_smoking_no_parties_or_events = "No smoking. No parties or events. No pets.";
+  static const price_and_availability = "Price and availability";
+  static const full_refund_within_limited = "Full refund within limited";
+  static const this_home_is_available_from = "This home is available from 15-20 Oct.";
+  static const book = "Book";
+  static const still_have_a_question = "Still have a question?";
+  static const message_host = "Message host";
+  static const average_nightly_rate_is_rounded = "Average nightly rate is rounded";
+  static const this_help_us_run_our_platform_and_offer = "This helps us run our platform and offer\nservices like 24/7 support on your trip";
+  static const add_payment_method = "ADD PAYMENT METHOD";
+  static const credit_or_debit_card = "Credit or debit card";
+  static const net_banking = "Net Banking";
+  static const for_notifications_reminders_and_help_logging_in = "For notifications, reminders, and help logging\nin.";
+
+
+  // Hosting
+
   static const one_tell_us_about_your_place = "1  Tell us about your place";
   static const share_some_basic_info = "Share some basic info, like\nwhere it is and how many\nguests can stay.";
   static const make_it_stand_out = "2   Make it stand out";
   static const add_five_or_more_photos = "Add 5 or more photos plus a\ntitle and description-we’ll help\nyou out.";
   static const finish_up_and_publish = "3   Finish up and publish";
   static const choose_if_you_like_to_start = "Choose if you’d like to start\nwith an experienced guest, set\na starting price, and publish\nyour listing.";
+  static const guests_have_the_whole_place = "Guests have the whole place to\nthemselves";
+  static const guest_have_their_own_room_in_a_home = "Guests have their own room in a\nhome, plus access to shared\nspaces";
   static const its_easy_to_get_started_on_airbnb = "It’s easy to get\nStarted on Airbnb";
   static const get_started = "Get started";
   static const save_and_exit = "Save & Exit";
@@ -252,5 +345,13 @@ class Strings {
   static const next = "Next";
   static const which_of_these_best_describes_your_place = "Which of these best\ndescribes your place?";
   static const what_type_of_place_will_guests_have = "What type of place will\nguests have";
+  static const an_entire_place = "An entire place";
+  static const a_room = "A room";
+  static const a_shared_room = "A shared room";
+
+
+
+
+
 
 }

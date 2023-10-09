@@ -21,8 +21,8 @@ class PropertyList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell( // Wrap the entire content with InkWell
-      onTap: onTap, // Assign the onTap callback
+    return InkWell(
+      onTap: onTap,
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(

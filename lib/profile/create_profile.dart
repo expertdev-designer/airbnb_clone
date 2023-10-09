@@ -36,8 +36,9 @@ class _CreateProfileState extends State<CreateProfile> {
                             ),
                           ),
                           context: context,
+                          isScrollControlled: true,
                           builder: (context) {
-                            return EditProfileBottomSheet(); // Display the bottom sheet here
+                            return EditProfileBottomSheet();
                           },
                         );
                       },

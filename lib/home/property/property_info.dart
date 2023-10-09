@@ -1,5 +1,9 @@
 import 'package:airbnb/common_widgets/buttons/custom_button.dart';
 import 'package:airbnb/common_widgets/list_items/review_list.dart';
+import 'package:airbnb/contact_host/contact_host.dart';
+import 'package:airbnb/contact_host/message_host.dart';
+import 'package:airbnb/home/property/cnfrm_and_pay.dart';
+import 'package:airbnb/home/property/house_rules.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -9,6 +13,7 @@ import '../../utils/Images.dart';
 import '../../utils/app_colors.dart';
 import '../../utils/app_strings.dart';
 import '../../utils/app_styles.dart';
+import 'cancellation_policy.dart';
 
 class PropertyInfo extends StatefulWidget {
   const PropertyInfo({Key? key}) : super(key: key);
@@ -18,6 +23,22 @@ class PropertyInfo extends StatefulWidget {
 }
 
 class _PropertyInfoState extends State<PropertyInfo> {
+  void _showCancellationPolicyBottomSheet(BuildContext context) {
+    showModalBottomSheet(
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(30),
+          topRight: Radius.circular(30),
+        ),
+      ),
+      context: context,
+      isScrollControlled: true,
+      builder: (BuildContext context) {
+        return CancellationPolicyBottomSheet();
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -454,7 +475,13 @@ class _PropertyInfoState extends State<PropertyInfo> {
                             width: 323,
                             height: 53,
                             decoration: AppStyles.buttonBoxDecoration,
-                            child: CustomButton(text: Strings.contact_host, onPressed: () {}, textStyle: AppStyles.eighteenSemiBold,),
+                            child: CustomButton(
+                              text: Strings.contact_host,
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => ContactHost() ));
+                              },
+                              textStyle: AppStyles.eighteenSemiBold,
+                            ),
                           ),
                         ),
                         SizedBox(height: 30),
@@ -477,14 +504,24 @@ class _PropertyInfoState extends State<PropertyInfo> {
                         SizedBox(height: 20),
                         Divider(),
                         SizedBox(height: 20),
-                        Text(
-                          Strings.cancellation_policy,
-                          style: AppStyles.twentyTwoSemiBold,
-                        ),
-                        SizedBox(height: 8),
-                        Text(
-                          Strings.cancel_before_for_a_refund,
-                          style: AppStyles.lightGreyTextStyle,
+                        GestureDetector(
+                          onTap: (){
+                            _showCancellationPolicyBottomSheet(context);
+                          },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                Strings.cancellation_policy,
+                                style: AppStyles.twentyTwoSemiBold,
+                              ),
+                              SizedBox(height: 8),
+                              Text(
+                                Strings.cancel_before_for_a_refund,
+                                style: AppStyles.lightGreyTextStyle,
+                              ),
+                            ],
+                          ),
                         ),
                         SizedBox(height: 20),
                         Divider(),
@@ -509,7 +546,7 @@ class _PropertyInfoState extends State<PropertyInfo> {
                         SizedBox(height: 12),
                         GestureDetector(
                           onTap: () {
-
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => HouseRules() ));
                           },
                           child: Text(
                               Strings.show_more,
@@ -520,7 +557,7 @@ class _PropertyInfoState extends State<PropertyInfo> {
                         Divider(),
                         SizedBox(height: 20),
                         Text(
-                          Strings.house_rules,
+                          Strings.safety_and_report,
                           style: AppStyles.twentyTwoSemiBold,
                         ),
                         SizedBox(height: 8),
@@ -600,7 +637,11 @@ class _PropertyInfoState extends State<PropertyInfo> {
                 child: Container(
                     width: 114,
                     height: 51,
-                    child: CustomButton(text: Strings.reserve, onPressed: () {  }, textStyle: AppStyles.sixteenTextStyle, backgroundColor: AppColors.button_pink, borderRadius: 11,)),
+                    child: CustomButton(text: Strings.reserve,
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => ConfirmAndPay() ));
+                      },
+                      textStyle: AppStyles.sixteenTextStyle, backgroundColor: AppColors.button_pink, borderRadius: 11,)),
               ),
             ],
           ),

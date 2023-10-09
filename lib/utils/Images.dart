@@ -77,5 +77,10 @@ class Images{
   static const String bed = 'assets/images/bed.png';
   static const String house_door = 'assets/images/house_door.png';
   static const String stand_out = 'assets/images/stand_out.png';
+  static const String home = 'assets/images/home.svg';
+  static const String shared_room = 'assets/images/shared_room.svg';
+  static const String three_man = 'assets/images/three_man.svg';
+  static const String credit_card = 'assets/images/credit_card.svg';
+  static const String net_banking = 'assets/images/net_banking.svg';
 
 }

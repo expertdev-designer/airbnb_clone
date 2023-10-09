@@ -56,6 +56,7 @@ class Step1Hosting extends StatelessWidget {
                   height: 343,
                 ),
              ),
+            SizedBox(height: 20),
             Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -79,8 +80,8 @@ class Step1Hosting extends StatelessWidget {
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  TextButton(
-                    onPressed: () {
+                  GestureDetector(
+                    onTap: () {
                       // Implement back button action
                     },
                     child: Text(
