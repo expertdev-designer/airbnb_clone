@@ -127,7 +127,8 @@ class _MessageHostState extends State<MessageHost> {
                 Container(
                   width: 343,
                     height: 49,
-                    child: CustomButton(text: Strings.send_message, onPressed: () {}, textStyle: AppStyles.sixteenMediumTextStyle,backgroundColor: AppColors.light_black, borderRadius: 10,),),
+                    child: CustomButton(text: Strings.send_message, onPressed: () {}, textStyle: AppStyles.sixteenMediumTextStyle,backgroundColor: AppColors.light_black, borderRadius: 10,),
+                ),
               ],
             ),
           )

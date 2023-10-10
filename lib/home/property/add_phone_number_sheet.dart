@@ -1,3 +1,4 @@
+import 'package:airbnb/common_widgets/buttons/custom_button.dart';
 import 'package:airbnb/utils/app_colors.dart';
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
@@ -47,12 +48,13 @@ class _AddPhoneNumberState extends State<AddPhoneNumber> {
                   ),
                   SizedBox(width: 8,),
                   Text(
-                    Strings.dates,
+                    Strings.add_phone_number,
                     style: AppStyles.sixteenVeryLightBlack,
                   ),
                 ],
               ),
             ),
+            Divider(),
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
@@ -61,6 +63,7 @@ class _AddPhoneNumberState extends State<AddPhoneNumber> {
                     Strings.for_notifications_reminders_and_help_logging_in,
                     style: AppStyles.lightBlackTextStyle,
                   ),
+                  SizedBox(height: 10,),
                   Container(
                     width: 344,
                     height: 116,
@@ -96,7 +99,9 @@ class _AddPhoneNumberState extends State<AddPhoneNumber> {
                         Container(
                           height: 57,
                           child: TextField(
+                            controller: phoneNumberController,
                             onChanged: handlePhoneNumberInput,
+                            keyboardType: TextInputType.number, 
                             decoration: InputDecoration(
                               border: InputBorder.none,
                               hintText: Strings.phone_number,
@@ -108,9 +113,20 @@ class _AddPhoneNumberState extends State<AddPhoneNumber> {
                       ],
                     ),
                   ),
+                  SizedBox(height: 10,),
+                  Text(
+                    Strings.cnfrm_number,
+                    style: AppStyles.twelveGreyBlue,
+                  ),
+                  SizedBox(height: 25,),
+                  Container(
+                      height: 58,
+                      width: 344,
+                      child: CustomButton(text: Strings.continue_text, onPressed: (){}, textStyle: AppStyles.sixteenMediumTextStyle, backgroundColor: AppColors.very_lightBlack, borderRadius: 10,),
+                  ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

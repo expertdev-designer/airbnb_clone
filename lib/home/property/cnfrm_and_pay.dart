@@ -24,6 +24,10 @@ class ConfirmAndPay extends StatefulWidget {
 class _ConfirmAndPayState extends State<ConfirmAndPay> {
   bool isUpiIdEditingVisible = true;
   TextEditingController UpiController = TextEditingController();
+  DateTimeRange selectedDates = DateTimeRange(
+    start: DateTime.now(),
+    end: DateTime.now(),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -105,20 +109,19 @@ class _ConfirmAndPayState extends State<ConfirmAndPay> {
                           style: AppStyles.seventeenGreyBlueSemibold,
                         ),
                         GestureDetector(
-                          onTap: () {
-                            showModalBottomSheet(
-                              shape: const RoundedRectangleBorder(
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(30),
-                                  topRight: Radius.circular(30),
-                                ),
-                              ),
-                              context: context,
-                              isScrollControlled: true,
-                              builder: (context) {
-                                return DatesBottomSheet(); // Display the bottom sheet here
-                              },
-                            );
+                          onTap: ()
+                            async{
+                              final DateTimeRange? dateTimeRange = await showDateRangePicker(
+                                context: context,
+                                firstDate: DateTime(2000),
+                                lastDate: DateTime(3000),
+                              );
+                              if (dateTimeRange != null) {
+                                setState(() {
+                                  selectedDates = dateTimeRange;
+                                });
+                              }
+
                           },
                           child: Text(
                             Strings.edit,
