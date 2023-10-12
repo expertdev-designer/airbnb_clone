@@ -50,6 +50,11 @@ class AppStyles{
     fontSize: 12,
     fontWeight: FontWeight.normal,
   );
+  static TextStyle twelveGrey = GoogleFonts.poppins(
+    color: AppColors.grey,
+    fontSize: 12,
+    fontWeight: FontWeight.w600,
+  );
   static TextStyle twelveGreyBlue = GoogleFonts.poppins(
     color: AppColors.grey_blue,
     fontSize: 12,
@@ -83,7 +88,11 @@ class AppStyles{
     fontSize: 14,
     fontWeight: FontWeight.normal,
   );
-
+  static TextStyle fourteenGreyMedium = GoogleFonts.poppins(
+    color: AppColors.grey,
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
   static TextStyle blackNormalTextStyle = GoogleFonts.poppins(
     color: AppColors.color_black,
     fontSize: 14,
@@ -123,6 +132,11 @@ class AppStyles{
     color: AppColors.grey_blue,
     fontSize: 14,
     fontWeight: FontWeight.normal,
+  );
+  static TextStyle fourteenGreyBlueSemiBold = GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 14,
+    fontWeight: FontWeight.w600,
   );
   static TextStyle mediumGreyBlue = GoogleFonts.poppins(
     color: AppColors.grey_blue,
@@ -170,6 +184,11 @@ class AppStyles{
     color: AppColors.grey_blue,
     fontSize: 15,
     fontWeight: FontWeight.normal,
+  );
+  static TextStyle fifteenGreyBlueSemibold= GoogleFonts.poppins(
+    color: AppColors.grey_blue,
+    fontSize: 15,
+    fontWeight: FontWeight.w600,
   );
   static TextStyle fifteenGreyBlueMedium= GoogleFonts.poppins(
     color: AppColors.grey_blue,
@@ -520,5 +539,16 @@ class AppStyles{
     color: AppColors.color_white,
     borderRadius: BorderRadius.circular(42),
     border: Border.all(color: AppColors.very_light_grey, width: 1),
+  );
+
+  static BoxDecoration eighteenVeryLightGrey = BoxDecoration(
+    borderRadius: BorderRadius.circular(18),
+    border: Border.all(color: AppColors.very_light_grey, width: 1),
+  );
+
+  static BoxDecoration searchBarBoxDecoration = BoxDecoration(
+    color: AppColors.divider_color,
+    borderRadius: BorderRadius.circular(42),
+    border: Border.all(color: AppColors.grey, width: 1),
   );
 }

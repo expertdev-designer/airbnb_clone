@@ -4,6 +4,7 @@ import 'package:airbnb/home/property/cancellation_policy.dart';
 import 'package:airbnb/login/cnfrm_number.dart';
 import 'package:airbnb/login/login_page.dart';
 import 'package:airbnb/profile/create_profile.dart';
+import 'package:airbnb/profile/user_profile/payment/payment_and_payouts.dart';
 import 'package:airbnb/profile/user_profile/personal_information/delete_your_account.dart';
 import 'package:airbnb/profile/user_profile/personal_information/personal_info.dart';
 import 'package:airbnb/trips/trips_login_page.dart';
@@ -164,7 +165,7 @@ class UserProfilePage extends StatelessWidget {
             text: Strings.paymenyts_payouts,
             rightImageAsset: Images.right_arrow,
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => DeleteYourAccount() ));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => PaymentsAndPayouts() ));
           },
           ),
           const CustomListTile(leftImageAsset: Images.accessibility,

@@ -82,5 +82,12 @@ class Images{
   static const String three_man = 'assets/images/three_man.svg';
   static const String credit_card = 'assets/images/credit_card.svg';
   static const String net_banking = 'assets/images/net_banking.svg';
+  static const String carbon_monoxide_not = 'assets/images/carbon_monoxide_not.svg';
+  static const String smoke_alarm_not = 'assets/images/smoke_alarm_not.svg';
+  static const String payments_method = 'assets/images/payments_method.svg';
+  static const String your_payments = 'assets/images/your_payments.svg';
+  static const String coupon = 'assets/images/coupon.svg';
+  static const String transaction_history = 'assets/images/transaction_history.svg';
+  static const String pay_hand = 'assets/images/pay_hand.svg';
 
 }

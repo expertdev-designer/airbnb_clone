@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../utils/app_styles.dart';
 
 class CustomListTile extends StatelessWidget {
-  final String leftImageAsset;
+  final String? leftImageAsset;
   final double leftImageWidth;
   final double leftImageHeight;
   final String text;
@@ -14,7 +14,7 @@ class CustomListTile extends StatelessWidget {
   final bool showDivider;
 
   const CustomListTile({
-    required this.leftImageAsset,
+    this.leftImageAsset,
     this.leftImageWidth = 28.0,
     this.leftImageHeight = 28.0,
     required this.text,
@@ -31,11 +31,13 @@ class CustomListTile extends StatelessWidget {
         GestureDetector(
           onTap: onTap,
           child: ListTile(
-            leading: SvgPicture.asset(
-              leftImageAsset,
+            leading: leftImageAsset != null
+                ? SvgPicture.asset(
+              leftImageAsset!,
               width: leftImageWidth,
               height: leftImageHeight,
-            ),
+            )
+                : null,
             title: Text(
               text,
               style: textStyle ?? AppStyles.listTileTextStyle,

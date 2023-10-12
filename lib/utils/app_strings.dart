@@ -171,6 +171,7 @@ class Strings {
   static const india = "India";
   static const jibhi_himachal_pradesh = "Jibhi, Himachal Pradesh,";
   static const eight_reviews = "8 Reviews";
+  static const six_reviews = "6 reviews";
   static const five_star = "5.0";
   static const entire_cabin_hosted_by_akshay = "Entire cabin hosted by\nAkshay";
   static const four_guests = "4 guests";
@@ -227,13 +228,17 @@ class Strings {
   static const checkout_before = "Checkout before 11:00 AM";
   static const four_guests_maximum = "4 guests maximum";
   static const carbon_monoxide_alarm = "Carbon monoxide alarm";
+  static const carbon_monoxide_alarm_not_supported = "Carbon monoxide alarm not supported";
+  static const smoke_alarm_not_supported = "Smoke alarm not supported";
   static const smoke_alarm = "Smoke alarm";
   static const must_climb_stairs = "Must climb stairs";
   static const report_this_listing = "Report this listing";
   static const total_before_taxes = "Total before taxes";
   static const price = "178";
   static const reserve = "Reserve";
-  static const safety_and_report = "Safety & property";
+  static const safety_and_property = "Safety & property";
+  static const safety_devices = "Safety devices";
+  static const avoid_surprises_by_looking_over_these = "Avoid surprises by looking over these\nimportant details about your Host’s property.";
 
 
   //Delete your Account
@@ -243,6 +248,7 @@ class Strings {
   static const learn_more_about_account_deletion = "Learn more about account deletion\nrequests.";
   static const where_do_you_reside = "Where do you reside?";
   static const why_are_you_deleting_your_account = "Why are you deleting your account?";
+  static const why_are_you_reporting_this_listing = "Why are you reporting\nthis listing?";
 
   // Confirm and Pay -- Cancellation policy -- House rules
 
@@ -322,6 +328,8 @@ class Strings {
   static const credit_or_debit_card = "Credit or debit card";
   static const net_banking = "Net Banking";
   static const for_notifications_reminders_and_help_logging_in = "For notifications, reminders, and help logging\nin.";
+  static const the_host_hasnot_reported_a_carbon_monoxide_alarm = "The host hasn’t reported a carbon monooxide\nalarm on the property. We suggest bringing a\nportable detector for your trip.";
+  static const this_wont_be_shared_with_the_host = "This won't be shared with the host.";
 
 
   // Hosting
@@ -349,6 +357,38 @@ class Strings {
   static const a_room = "A room";
   static const a_shared_room = "A shared room";
 
+// report this listing
+  static const its_inaccurate_or_incorrect = "It's inaccurate or incorrect";
+  static const its_not_a_real_place_to_stay = "It's not a real place to stay";
+  static const its_a_scam = "It’s a scam";
+  static const its_offensive = "It’s offensive";
+  static const its_something_else = "It’s something else";
+
+//  payments and payouts
+
+  static const travelling = "Travelling";
+  static const payments_method = "Payments method";
+  static const payment_methods = "Payment methods";
+
+  static const your_payments = "Your payments";
+  static const credits_and_coupons = "Credits & coupons";
+  static const payouts_method = "Payout methods";
+  static const transaction_history = "Transaction history";
+  static const donations = "Donations";
+
+//  review
+
+  static const cleanliness = "Cleanliness";
+  static const accuracy = "Accuracy";
+  static const communications = "Communications";
+  static const location = "Location";
+  static const check_in_text = "Check-in";
+  static const value = "Value";
+  static const reviews = "reviews";
+  static const lorem_ipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+  static const add_a_payment_method_using_our_secure_payment = "Add a payment method using our secure payment system, then start planning your new trip";
+  static const make_all_payments_through_airbnb = "Make all payments through Airbnb";
+  static const always_pay_and_communicate_through_airbnb_to_ensure = "Always pay and communicate through Airbnb to ensure you’re protected under our Terms of Service, Payments of Service, cancellation and other safeguards.";
 
 
 

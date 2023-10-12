@@ -121,7 +121,6 @@ class _ConfirmAndPayState extends State<ConfirmAndPay> {
                                   selectedDates = dateTimeRange;
                                 });
                               }
-
                           },
                           child: Text(
                             Strings.edit,
@@ -131,7 +130,7 @@ class _ConfirmAndPayState extends State<ConfirmAndPay> {
                       ],
                     ),
                     Text(
-                      Strings.october,
+                      "${selectedDates.duration.inDays}",
                       style: AppStyles.greyfourteenStyle,
                     ),
                     SizedBox(height: 20),

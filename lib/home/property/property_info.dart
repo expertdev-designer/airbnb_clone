@@ -4,6 +4,9 @@ import 'package:airbnb/contact_host/contact_host.dart';
 import 'package:airbnb/contact_host/message_host.dart';
 import 'package:airbnb/home/property/cnfrm_and_pay.dart';
 import 'package:airbnb/home/property/house_rules.dart';
+import 'package:airbnb/home/property/report_the_listing.dart';
+import 'package:airbnb/home/property/review/review_page.dart';
+import 'package:airbnb/home/property/safety_and_property.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -84,7 +87,7 @@ class _PropertyInfoState extends State<PropertyInfo> {
                             const Text('.'),
                             TextButton(
                               onPressed: () {
-
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => ReviewPage() ));
                               },
                               child: Text(
                                 Strings.eight_reviews,
@@ -557,7 +560,7 @@ class _PropertyInfoState extends State<PropertyInfo> {
                         Divider(),
                         SizedBox(height: 20),
                         Text(
-                          Strings.safety_and_report,
+                          Strings.safety_and_property,
                           style: AppStyles.twentyTwoSemiBold,
                         ),
                         SizedBox(height: 8),
@@ -576,7 +579,7 @@ class _PropertyInfoState extends State<PropertyInfo> {
                         SizedBox(height: 12),
                          GestureDetector(
                            onTap: () {
-
+                             Navigator.push(context, MaterialPageRoute(builder: (context) => SafetyAndProperty() ));
                            },
                            child: Text(
                                Strings.show_more,
@@ -596,7 +599,7 @@ class _PropertyInfoState extends State<PropertyInfo> {
                             const SizedBox(width: 4),
                             GestureDetector(
                               onTap: () {
-
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => ReportTheListing() ));
                               },
                               child: Text(
                                 Strings.report_this_listing,
